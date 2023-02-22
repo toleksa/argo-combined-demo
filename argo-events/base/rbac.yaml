@@ -98,7 +98,7 @@ roleRef:
   name: argo-events-role
 subjects:
   - kind: ServiceAccount
-    name: argo-events-sa
+    name: argo-events-webhook
     namespace: argo-events
 
 ---
