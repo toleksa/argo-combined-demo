@@ -4,7 +4,7 @@ metadata:
   name: webhook
 spec:
   template:
-    serviceAccountName: argo-events-webhook
+    serviceAccountName: argo-events-events-webhook
   dependencies:
   - name: github
     eventSourceName: github
