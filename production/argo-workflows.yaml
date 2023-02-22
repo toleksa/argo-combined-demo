@@ -16,7 +16,7 @@ spec:
         server: 
           ingress:
             hosts:
-              - acme.com
+              - acme.c3.kube.ac
             enabled: true
             ingressClassName: nginx
         controller:

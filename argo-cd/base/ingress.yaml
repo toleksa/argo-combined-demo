@@ -18,5 +18,5 @@ spec:
            name: argocd-server
            port:
              number: 80
-    host: acme.com
+    host: acme.c3.kube.ac
 
