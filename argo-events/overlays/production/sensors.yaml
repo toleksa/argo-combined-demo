@@ -174,7 +174,7 @@ spec:
                   command: [python]
                   source: |
                     ref = "{{inputs.parameters.ref}}"
-                    condition = ref == "refs/heads/main"
+                    condition = ref == "refs/heads/master"
                     print(str(condition).lower())
 
         parameters:
