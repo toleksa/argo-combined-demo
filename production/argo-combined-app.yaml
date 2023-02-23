@@ -10,7 +10,7 @@ spec:
   source:
     path: kustomize/overlays/production
     repoURL: https://github.com/toleksa/argo-combined-app
-    targetRevision: HEAD
+    targetRevision: production
     kustomize:
       images:
       - toleksa/argo-combined-app:latest

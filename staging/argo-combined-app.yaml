@@ -10,7 +10,7 @@ spec:
   source:
     path: kustomize/overlays/staging
     repoURL: https://github.com/toleksa/argo-combined-app
-    targetRevision: HEAD
+    targetRevision: staging
     kustomize:
       images:
       - toleksa/argo-combined-app:latest
