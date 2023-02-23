@@ -107,6 +107,43 @@ spec:
                     template: test
                     dependencies:
                     - promote-staging
+                  - name: build-notification
+                    templateRef:
+                      name: custom-json
+                      template: custom-json
+                      clusterScope: true
+                    arguments:
+                      parameters:
+                      - name: stage
+                        value: build
+                      - name: author
+                        value: ""
+                    dependencies:
+                    - build-step
+                  - name: push-notification
+                    templateRef:
+                      name: custom-json
+                      template: custom-json
+                      clusterScope: true
+                    arguments:
+                      parameters:
+                      - name: stage
+                        value: push
+                      - name: author
+                        value: ""
+                  - name: deployment-notification
+                    templateRef:
+                      name: custom-json
+                      template: custom-json
+                      clusterScope: true
+                    arguments:
+                      parameters:
+                      - name: stage
+                        value: deployment
+                      - name: author
+                        value: ""
+                    dependencies:
+                    - promote-production
               - name: test
                 script:
                   image: alpine
