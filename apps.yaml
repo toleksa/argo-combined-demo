@@ -11,7 +11,7 @@ spec:
   project: production
   source:
     repoURL: https://github.com/toleksa/argo-combined-demo.git
-    targetRevision: HEAD
+    targetRevision: production
     path: production
   destination:
     server: https://kubernetes.default.svc
@@ -34,7 +34,7 @@ spec:
   project: staging
   source:
     repoURL: https://github.com/toleksa/argo-combined-demo.git
-    targetRevision: HEAD
+    targetRevision: staging
     path: staging
   destination:
     server: https://kubernetes.default.svc
