@@ -17,7 +17,7 @@ spec:
         endpoint: /argo-combined-app
         port: "12000"
         method: POST
-        url: http://donkey.ydns.eu:12000
+        url: https://donkey.ydns.eu
       events:
         - "*"
       apiToken:
@@ -48,4 +48,4 @@ spec:
            name: github-eventsource-svc
            port:
              number: 12000
-    host: donkey.ydns.eu
+    host: webhook.s3.kube.ac
