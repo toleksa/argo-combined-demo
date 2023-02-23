@@ -65,7 +65,7 @@ spec:
                       - name: repo_commit_id
                         value: ""
                       - name: container_image
-                        value: vfarcic/
+                        value: toleksa/
                       - name: container_tag
                         value: ""
                   - name: promote-staging
