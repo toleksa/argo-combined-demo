@@ -2,6 +2,6 @@
   {
     "op": "replace",
     "path": "/spec/rules/0/host",
-    "value": "acme.c3.kube.ac"
+    "value": "workflow.c3.kube.ac"
   }
 ]

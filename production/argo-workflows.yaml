@@ -16,7 +16,7 @@ spec:
         server: 
           ingress:
             hosts:
-              - acme.c3.kube.ac
+              - workflow.c3.kube.ac
             enabled: true
             ingressClassName: nginx
         controller:

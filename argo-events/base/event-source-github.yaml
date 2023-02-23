@@ -17,5 +17,5 @@ spec:
            name: webhook-eventsource-svc
            port:
              number: 12000
-    host: acme.c3.kube.ac
+    host: workflow.c3.kube.ac
 
