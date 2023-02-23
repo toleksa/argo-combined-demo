@@ -11,9 +11,9 @@ spec:
     path: kustomize/overlays/production
     repoURL: https://github.com/toleksa/argo-combined-app
     targetRevision: production
-    kustomize:
-      images:
-      - toleksa/argo-combined-app:latest
+    #kustomize:
+    #  images:
+    #  - toleksa/argo-combined-app:latest
   destination:
     server: https://kubernetes.default.svc
     namespace: production
