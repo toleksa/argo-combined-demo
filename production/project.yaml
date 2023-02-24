@@ -1,23 +1,23 @@
 ---
 
 apiVersion: argoproj.io/v1alpha1
-kind: Application
+kind: AppProject
 metadata:
   name: production
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: production
-  source:
-    repoURL: https://github.com/toleksa/argo-combined-demo.git
-    targetRevision: HEAD
-    path: production
-  destination:
+  description: Production project
+  sourceRepos:
+  - '*'
+  destinations:
+  - namespace: '*'
     server: https://kubernetes.default.svc
-    namespace: production
-  syncPolicy:
-    automated:
-      selfHeal: true
-      prune: true
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
+  namespaceResourceWhitelist:
+  - group: '*'
+    kind: '*'
 
